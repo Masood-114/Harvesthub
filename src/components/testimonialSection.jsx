@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import { Card, CardContent } from "../components/ui/card";
-import { Avatar, AvatarImage, AvatarFallback } from "../components/ui/avatar";
-import { ScrollArea, ScrollBar } from "../components/ui/scroll-area";
+import { Card, CardContent } from "./ui/card";
+import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar";
+import { ScrollArea, ScrollBar } from "./ui/scroll-area";
 import { Star } from "lucide-react";
 
 const testimonials = [

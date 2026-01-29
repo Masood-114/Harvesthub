@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import Navbar from "../components/navbar/navbar";
+import Navbar from "../components/navbar/NavBar";
 
 const AboutPage = () => {
   const navigate = useNavigate();

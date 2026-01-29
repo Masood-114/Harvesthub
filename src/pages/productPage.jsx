@@ -1,15 +1,15 @@
 import { useDispatch, useSelector } from "react-redux";
-import Heading from "../components/heading";
-import Navbar from "../components/navbar/navbar";
+import Heading from "../components/Heading";
+import Navbar from "../components/navbar/NavBar";
 import { lazy, Suspense, useEffect, useState } from "react";
 import { fetchVeggies } from "../features/veggieSlice";
-import ProductsSelecton from "../components/productsSelecton";
+import ProductsSelecton from "../components/ProductsSelecton";
 import { motion, AnimatePresence } from "framer-motion";
 import { fetchCategory, setActiveCategory } from "../features/categorySlice";
 import { searchApi, setQuery } from "../features/searchSlice";
 import debounce from "../lib/debounce";
-import SectionPart from "../components/sectionPart";
-const ProductCard = lazy(() => import("../components/productCard"));
+import SectionPart from "../components/SectionPart";
+const ProductCard = lazy(() => import("../components/ProductCard"));
 
 const ProductPage = () => {
   const dispatch = useDispatch();

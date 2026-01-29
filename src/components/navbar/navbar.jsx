@@ -1,9 +1,9 @@
 import { Link, useNavigate } from "react-router-dom";
-import CartDrawer from "../../pages/cartPage";
+import CartDrawer from "../../pages/CartPage";
 import { FiMenu, FiUser, FiX } from "react-icons/fi";
 
 import { useState } from "react";
-import CtButton from "../button";
+import CtButton from "../Button";
 import { useDispatch, useSelector } from "react-redux";
 import { logOut } from "../../features/authSlice";
 

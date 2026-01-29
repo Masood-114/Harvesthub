@@ -12,7 +12,7 @@ import {
 import { Input } from "../../components/ui/input";
 import { Label } from "../../components/ui/label";
 import { useDispatch, useSelector } from "react-redux";
-import CtButton from "../../components/button";
+import CtButton from "../../components/Button";
 
 const UserPage = () => {
   const navigate = useNavigate();

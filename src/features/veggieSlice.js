@@ -12,7 +12,6 @@ export const fetchVeggies = createAsyncThunk(
         categoryName === "All" ? apiVeggie : `${apiCateFilter}${categoryName}`;
       const response = await axios.get(url);
       const data = (await response.data?.meals) || [];
-      console.log("Veggies", data);
       return data;
     } catch (error) {
       return rejectWithValue(error.message);
@@ -39,12 +38,11 @@ const veggieSlice = createSlice({
         item.idMeal === updateVeg.mealId ? updateVeg : item,
       );
     },
-   deleteVeggie: (state, action) => {
-  state.items = state.items.filter(
-    (item) => item.idMeal !== action.payload
-  );
-},
-
+    deleteVeggie: (state, action) => {
+      state.items = state.items.filter(
+        (item) => item.idMeal !== action.payload,
+      );
+    },
   },
   extraReducers: (builder) => {
     builder

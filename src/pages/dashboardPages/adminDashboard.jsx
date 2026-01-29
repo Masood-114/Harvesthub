@@ -3,9 +3,9 @@ import { Users, ShoppingCart, Leaf, DollarSign } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
-import ProductForm from "../../components/addProductForm";
-import ConfirmDelete from "../../components/deleteConfirm";
-import SuccessToast from "../../components/successToast";
+import ProductForm from "../../components/AddProductForm";
+import ConfirmDelete from "../../components/DeleteConfirm";
+import SuccessToast from "../../components/SuccessToast";
 
 import {
   Table,
@@ -28,10 +28,30 @@ import { Card } from "../../components/ui/card";
 import { fetchVeggies, deleteVeggie } from "../../features/veggieSlice";
 
 const stats = [
-  { title: "Total Products", value: "128", icon: <Leaf />, color: "bg-emerald-100 text-emerald-600" },
-  { title: "Total Orders", value: "1,024", icon: <ShoppingCart />, color: "bg-blue-100 text-blue-600" },
-  { title: "Users", value: "540", icon: <Users />, color: "bg-purple-100 text-purple-600" },
-  { title: "Revenue", value: "$12,430", icon: <DollarSign />, color: "bg-orange-100 text-orange-600" },
+  {
+    title: "Total Products",
+    value: "128",
+    icon: <Leaf />,
+    color: "bg-emerald-100 text-emerald-600",
+  },
+  {
+    title: "Total Orders",
+    value: "1,024",
+    icon: <ShoppingCart />,
+    color: "bg-blue-100 text-blue-600",
+  },
+  {
+    title: "Users",
+    value: "540",
+    icon: <Users />,
+    color: "bg-purple-100 text-purple-600",
+  },
+  {
+    title: "Revenue",
+    value: "$12,430",
+    icon: <DollarSign />,
+    color: "bg-orange-100 text-orange-600",
+  },
 ];
 
 const AdminDashboard = () => {

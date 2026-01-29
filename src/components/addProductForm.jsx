@@ -2,8 +2,8 @@ import { useForm } from "react-hook-form";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { X } from "lucide-react";
-import { Button } from "../components/ui/button";
-import { Input } from "../components/ui/input";
+import { Button } from "./ui/button";
+import { Input } from "./ui/input";
 
 import {
   Form,
@@ -12,8 +12,8 @@ import {
   FormLabel,
   FormControl,
   FormMessage,
-} from "../components/ui/form";
-import SuccessToast from "../components/successToast";
+} from "./ui/form";
+import SuccessToast from "./SuccessToast";
 
 const ProductForm = ({ open, onClose, initialData, onSave }) => {
   const form = useForm({

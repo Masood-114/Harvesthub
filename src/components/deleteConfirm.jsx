@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { Button } from "../components/ui/button";
+import { Button } from "./ui/button";
 import { X } from "lucide-react";
-import { Card } from "../components/ui/card";
+import { Card } from "./ui/card";
 import { MdOutlineDelete } from "react-icons/md";
 
 const ConfirmDelete = ({ open, onClose, onConfirm }) => {

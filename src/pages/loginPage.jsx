@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { loginSuccess } from "../features/authSlice";
 import { useForm } from "react-hook-form";
 import { Input } from "../components/ui/input";
-import SuccessToast from "../components/successToast";
+import SuccessToast from "../components/SuccessToast";
 import { useState } from "react";
 
 const LoginPage = () => {
@@ -12,7 +12,6 @@ const LoginPage = () => {
   const navigate = useNavigate();
   const { users } = useSelector((state) => state.users);
   const [toastShow, setToastShow] = useState(false);
-  console.log(users);
 
   const {
     register,
@@ -44,7 +43,11 @@ const LoginPage = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center px-6">
-      <SuccessToast show={toastShow} message={"Invalid email or password"} className={"bg-red-600"} />
+      <SuccessToast
+        show={toastShow}
+        message={"Invalid email or password"}
+        className={"bg-red-600"}
+      />
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
