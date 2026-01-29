@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { FiMenu, FiUser, FiX } from "react-icons/fi";
 import { useState } from "react";
-import CtButton from "../button";
+import CtButton from "../Button";
 import { useDispatch, useSelector } from "react-redux";
 import { logOut } from "../../features/authSlice";
 

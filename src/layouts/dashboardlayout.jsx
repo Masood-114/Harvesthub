@@ -1,4 +1,4 @@
-import DashboardNavbar from "../components/navbar/dashboardNavbar";
+import DashboardNavbar from "../components/navbar/DashboardNavbar";
 import React from "react";
 import { useSelector } from "react-redux";
 import { Outlet } from "react-router-dom";

@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import Navbar from "../components/navbar/navbar";
+import Navbar from "../components/navbar/NavBar";
 
 const ContactUs = () => {
   const {

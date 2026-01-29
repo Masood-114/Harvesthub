@@ -1,15 +1,15 @@
 import { useNavigate } from "react-router-dom";
-import FeatureCard from "../components/featureCard";
-import SectionPart from "../components/sectionPart";
-import ProductCard from "../components/productCard";
-import CtButton from "../components/button";
+import FeatureCard from "@/components/FeatureCard";
+import SectionPart from "@/components/SectionPart";
+import ProductCard from "@/components/ProductCard";
+import CtButton from "@/components/Button";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchVeggies } from "../features/veggieSlice";
-import CategoryBar from "../components/categoryBar";
-import Heading from "../components/heading";
-import TestimonialSection from "../components/testimonialSection";
-import Footer from "../components/footer";
+import { fetchVeggies } from "@/features/veggieSlice";
+import CategoryBar from "@/components/CategoryBar";
+import Heading from "@/components/Heading";
+import TestimonialSection from "@/components/TestimonialSection";
+import Footer from "@/components/Footer";
 
 export default function LandingPage() {
   const navigate = useNavigate();

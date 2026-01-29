@@ -1,7 +1,7 @@
 import { addToCart } from "../features/cartSlice";
 import React from "react";
 import { useDispatch } from "react-redux";
-import MealPopup from "./mealPop";
+import MealPopup from "./MealPop";
 
 const ProductCard = ({ item }) => {
   const dispatch = useDispatch();
